@@ -4,6 +4,14 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  '@warp-drive/core-types@0.0.0-alpha.57':
+    hash: rnzu45wsfx5hkikezauhgxolpi
+    path: patches/@warp-drive__core-types@0.0.0-alpha.57.patch
+  '@warp-drive/ember@0.0.0-alpha.33':
+    hash: wv56cnndcxdkml2qzc5ys6x7ky
+    path: patches/@warp-drive__ember@0.0.0-alpha.33.patch
+
 importers:
 
   .:
@@ -16,10 +24,10 @@ importers:
         version: 0.0.0-alpha.8
       '@warp-drive/ember':
         specifier: 0.0.0-alpha.33
-        version: 0.0.0-alpha.33(@ember-data/request@4.12.8)(@ember-data/store@4.12.8(@babel/core@7.24.6)(@ember-data/graph@4.12.8)(@ember-data/json-api@4.12.8)(@ember-data/legacy-compat@4.12.8)(@ember-data/model@4.12.8)(@ember-data/tracking@4.12.8)(@ember/string@3.1.1)(@glimmer/tracking@1.1.2)(ember-source@5.8.0(@babel/core@7.24.6)(@glimmer/component@1.1.2(@babel/core@7.24.6))(rsvp@4.8.5)(webpack@5.91.0)))(@ember-data/tracking@4.12.8)(@ember/string@3.1.1)(@warp-drive/core-types@0.0.0-alpha.57(@babel/core@7.24.6))
+        version: 0.0.0-alpha.33(patch_hash=wv56cnndcxdkml2qzc5ys6x7ky)(@ember-data/request@4.12.8)(@ember-data/store@4.12.8(@babel/core@7.24.6)(@ember-data/graph@4.12.8)(@ember-data/json-api@4.12.8)(@ember-data/legacy-compat@4.12.8)(@ember-data/model@4.12.8)(@ember-data/tracking@4.12.8)(@ember/string@3.1.1)(@glimmer/tracking@1.1.2)(ember-source@5.8.0(@babel/core@7.24.6)(@glimmer/component@1.1.2(@babel/core@7.24.6))(rsvp@4.8.5)(webpack@5.91.0)))(@ember-data/tracking@4.12.8)(@ember/string@3.1.1)(@warp-drive/core-types@0.0.0-alpha.57(patch_hash=rnzu45wsfx5hkikezauhgxolpi)(@babel/core@7.24.6))
       '@warp-drive/holodeck':
         specifier: 0.0.0-alpha.57
-        version: 0.0.0-alpha.57(@ember-data/request@4.12.8)(@warp-drive/core-types@0.0.0-alpha.57(@babel/core@7.24.6))
+        version: 0.0.0-alpha.57(@ember-data/request@4.12.8)(@warp-drive/core-types@0.0.0-alpha.57(patch_hash=rnzu45wsfx5hkikezauhgxolpi)(@babel/core@7.24.6))
     devDependencies:
       '@babel/core':
         specifier: ^7.24.4
@@ -62,7 +70,7 @@ importers:
         version: 6.0.4(@babel/core@7.24.6)(rollup@4.18.0)
       '@warp-drive/core-types':
         specifier: 0.0.0-alpha.57
-        version: 0.0.0-alpha.57(@babel/core@7.24.6)
+        version: 0.0.0-alpha.57(patch_hash=rnzu45wsfx5hkikezauhgxolpi)(@babel/core@7.24.6)
       concurrently:
         specifier: ^8.2.2
         version: 8.2.2
@@ -8246,7 +8254,7 @@ snapshots:
       - '@glint/template'
       - supports-color
 
-  '@warp-drive/core-types@0.0.0-alpha.57(@babel/core@7.24.6)':
+  '@warp-drive/core-types@0.0.0-alpha.57(patch_hash=rnzu45wsfx5hkikezauhgxolpi)(@babel/core@7.24.6)':
     dependencies:
       '@embroider/macros': 1.16.1
       '@warp-drive/build-config': 0.0.0-alpha.8
@@ -8256,7 +8264,7 @@ snapshots:
       - '@glint/template'
       - supports-color
 
-  '@warp-drive/ember@0.0.0-alpha.33(@ember-data/request@4.12.8)(@ember-data/store@4.12.8(@babel/core@7.24.6)(@ember-data/graph@4.12.8)(@ember-data/json-api@4.12.8)(@ember-data/legacy-compat@4.12.8)(@ember-data/model@4.12.8)(@ember-data/tracking@4.12.8)(@ember/string@3.1.1)(@glimmer/tracking@1.1.2)(ember-source@5.8.0(@babel/core@7.24.6)(@glimmer/component@1.1.2(@babel/core@7.24.6))(rsvp@4.8.5)(webpack@5.91.0)))(@ember-data/tracking@4.12.8)(@ember/string@3.1.1)(@warp-drive/core-types@0.0.0-alpha.57(@babel/core@7.24.6))':
+  '@warp-drive/ember@0.0.0-alpha.33(patch_hash=wv56cnndcxdkml2qzc5ys6x7ky)(@ember-data/request@4.12.8)(@ember-data/store@4.12.8(@babel/core@7.24.6)(@ember-data/graph@4.12.8)(@ember-data/json-api@4.12.8)(@ember-data/legacy-compat@4.12.8)(@ember-data/model@4.12.8)(@ember-data/tracking@4.12.8)(@ember/string@3.1.1)(@glimmer/tracking@1.1.2)(ember-source@5.8.0(@babel/core@7.24.6)(@glimmer/component@1.1.2(@babel/core@7.24.6))(rsvp@4.8.5)(webpack@5.91.0)))(@ember-data/tracking@4.12.8)(@ember/string@3.1.1)(@warp-drive/core-types@0.0.0-alpha.57(patch_hash=rnzu45wsfx5hkikezauhgxolpi)(@babel/core@7.24.6))':
     dependencies:
       '@ember-data/request': 4.12.8
       '@ember-data/store': 4.12.8(@babel/core@7.24.6)(@ember-data/graph@4.12.8)(@ember-data/json-api@4.12.8)(@ember-data/legacy-compat@4.12.8)(@ember-data/model@4.12.8)(@ember-data/tracking@4.12.8)(@ember/string@3.1.1)(@glimmer/tracking@1.1.2)(ember-source@5.8.0(@babel/core@7.24.6)(@glimmer/component@1.1.2(@babel/core@7.24.6))(rsvp@4.8.5)(webpack@5.91.0))
@@ -8265,16 +8273,16 @@ snapshots:
       '@ember/test-waiters': 3.1.0
       '@embroider/macros': 1.16.1
       '@warp-drive/build-config': 0.0.0-alpha.8
-      '@warp-drive/core-types': 0.0.0-alpha.57(@babel/core@7.24.6)
+      '@warp-drive/core-types': 0.0.0-alpha.57(patch_hash=rnzu45wsfx5hkikezauhgxolpi)(@babel/core@7.24.6)
     transitivePeerDependencies:
       - '@glint/template'
       - supports-color
 
-  '@warp-drive/holodeck@0.0.0-alpha.57(@ember-data/request@4.12.8)(@warp-drive/core-types@0.0.0-alpha.57(@babel/core@7.24.6))':
+  '@warp-drive/holodeck@0.0.0-alpha.57(@ember-data/request@4.12.8)(@warp-drive/core-types@0.0.0-alpha.57(patch_hash=rnzu45wsfx5hkikezauhgxolpi)(@babel/core@7.24.6))':
     dependencies:
       '@ember-data/request': 4.12.8
       '@hono/node-server': 1.11.1
-      '@warp-drive/core-types': 0.0.0-alpha.57(@babel/core@7.24.6)
+      '@warp-drive/core-types': 0.0.0-alpha.57(patch_hash=rnzu45wsfx5hkikezauhgxolpi)(@babel/core@7.24.6)
       chalk: 5.3.0
       hono: 4.3.11
 

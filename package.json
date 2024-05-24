@@ -81,5 +81,11 @@
     "@warp-drive/build-config": "0.0.0-alpha.8",
     "@warp-drive/ember": "0.0.0-alpha.33",
     "@warp-drive/holodeck": "0.0.0-alpha.57"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "@warp-drive/ember@0.0.0-alpha.33": "patches/@warp-drive__ember@0.0.0-alpha.33.patch",
+      "@warp-drive/core-types@0.0.0-alpha.57": "patches/@warp-drive__core-types@0.0.0-alpha.57.patch"
+    }
   }
 }

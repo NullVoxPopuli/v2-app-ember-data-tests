@@ -1,0 +1,49 @@
+diff --git a/dist/index.js b/dist/index.js
+index b06c7822c782aed0a045f107b6bc59832770adbb..37f038746912ccb8159c1eccf83e6d7e7328d2ec 100644
+--- a/dist/index.js
++++ b/dist/index.js
+@@ -578,7 +578,7 @@ class Await extends Component {
+   }
+ }
+ function notNull(x1) {
+-  macroCondition(getGlobalConfig().WarpDrive.env.DEBUG) ? (test => {
++  macroCondition(getGlobalConfig().WarpDrive?.env?.DEBUG) ? (test => {
+     if (!test) {
+       throw new Error('Expected a non-null value, but got null');
+     }
+@@ -701,7 +701,7 @@ class Request extends Component {
+             throw new Error(`Invalid ${mode1 ? 'update mode' : '@autorefreshBehavior'} for <Request />: ${isNeverString(val1)}`);
+         }
+         const wasStoreRequest1 = request1[EnableHydration] === true;
+-        macroCondition(getGlobalConfig().WarpDrive.env.DEBUG) ? (test => {
++        macroCondition(getGlobalConfig().WarpDrive?.env?.DEBUG) ? (test => {
+           if (!test) {
+             throw new Error(`Cannot supply a different store via context than was used to create the request`);
+           }
+@@ -781,7 +781,7 @@ class Request extends Component {
+       request: request1,
+       query: query1
+     } = this.args;
+-    macroCondition(getGlobalConfig().WarpDrive.env.DEBUG) ? (test => {
++    macroCondition(getGlobalConfig().WarpDrive?.env?.DEBUG) ? (test => {
+       if (!test) {
+         throw new Error(`Cannot use both @request and @query args with the <Request> component`);
+       }
+@@ -801,7 +801,7 @@ class Request extends Component {
+     if (request1) {
+       return request1;
+     }
+-    macroCondition(getGlobalConfig().WarpDrive.env.DEBUG) ? (test => {
++    macroCondition(getGlobalConfig().WarpDrive?.env?.DEBUG) ? (test => {
+       if (!test) {
+         throw new Error(`You must provide either @request or an @query arg with the <Request> component`);
+       }
+@@ -813,7 +813,7 @@ class Request extends Component {
+   }
+   get store() {
+     const store1 = this.args.store || this._store;
+-    macroCondition(getGlobalConfig().WarpDrive.env.DEBUG) ? (test => {
++    macroCondition(getGlobalConfig().WarpDrive?.env?.DEBUG) ? (test => {
+       if (!test) {
+         throw new Error(moduleExists('ember-provide-consume-context') ? `No store was provided to the <Request> component. Either provide a store via the @store arg or via the context API provided by ember-provide-consume-context.` : `No store was provided to the <Request> component. Either provide a store via the @store arg or by registering a store service.`);
+       }
