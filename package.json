@@ -38,12 +38,13 @@
     "@glimmer/component": "^1.1.2",
     "@glimmer/tracking": "^1.1.2",
     "@rollup/plugin-babel": "^6.0.4",
+    "@warp-drive/core-types": "0.0.0-alpha.57",
     "concurrently": "^8.2.2",
     "ember-auto-import": "^2.7.2",
     "ember-cli": "~5.8.1",
     "ember-cli-babel": "^8.2.0",
     "ember-cli-htmlbars": "^6.3.0",
-    "ember-data": "~5.3.3",
+    "ember-data": "~4.12.0",
     "ember-load-initializers": "^2.1.2",
     "ember-modifier": "^4.1.0",
     "ember-page-title": "^8.2.3",
@@ -74,5 +75,11 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "@ember-data/request": "^4.12.0",
+    "@warp-drive/build-config": "0.0.0-alpha.8",
+    "@warp-drive/ember": "0.0.0-alpha.33",
+    "@warp-drive/holodeck": "0.0.0-alpha.57"
   }
 }
